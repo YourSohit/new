@@ -383,22 +383,10 @@ Sonyliv
 Jio cinema
 HotStar
 Zee5
-Lionsgatlay
-Primevideo[down]
-MX player
-Manoramamax
-Aha video
-Amazon mini tv
-Tentakotta
 Dangal Play
-Discovery Plus  
-RajDigitalTv
-ETVWIN
-ULLU
-CRUNCHYROLL
 More OTTs Soon!
 
-Thanks For Using ANToNi Bot ❤️**""")
+Thanks For Using OTT DRM Bot ❤️**""")
     
 @Bot.on_message(filters.command("sub") & filters.user(Config.OWNER_ID))
 async def tg_subget_Handler(bot: Client, message: Message):
@@ -568,14 +556,14 @@ async def tg_auth_Handler(bot: Client, message: Message):
     user_id = f"{from_user.id}"
     await bot.send_message(user_id, msg)
 
-about = f"""**🤖 My Name - [ANToNi](https://t.me/Antonitheottbot)
+about = f"""**🤖 My Name - [OTT DRM BOT](https://t.me/ottdrmdlbot)
 🏷️ Bot Version - v4.2.8-prerelease
 📝 Language - [Python](https://python.org/)
 📚 Library - [Pyrogram](http://Pyrogram.org/)
-📡 Hosted on - [Google Cloud](https://console.cloud.google.com)
-👨‍💻 Developer - [Iron Man](https://www.youtube.com/shorts/rxqAKn_VMXk)
-📢 Updates Channel - [Tony](https://t.me/tony_091)
-🕵️ Buy SubscriPtion - [Tony](https://t.me/tony_091)**"""
+📡 Hosted on - [Linode](https://Linode.com)
+👨‍💻 Developer - [Mr Provider](Https://t.me/mr_provider)
+📢 Updates Channel - [TCP Bots](https://t.me/tcp_bots)
+🕵️ Buy SubscriPtion - [Mr Provider](https://t.me/mr_provider)**"""
 
 @Bot.on_callback_query(filters.regex(pattern="^(Help|usage|ContactUs|About|plans)$"))
 async def callback(Client, CallbackQuery):
@@ -601,16 +589,16 @@ async def callback(Client, CallbackQuery):
 
 **Just send me any DRM links from supported Otts to download that I can also upload to [Google Drive](https://drive.google.com/) or [Telegram](https://telegram.org/).
 
-If bot didn't respond contact [Tony](https://t.me/tony_091)**""", reply_markup=InlineKeyboardMarkup(ST1), disable_web_page_preview=True)
+If bot didn't respond contact [Mr Provider](https://t.me/Mr_provider)**""", reply_markup=InlineKeyboardMarkup(ST1), disable_web_page_preview=True)
  
     if CallbackQuery.data == "plans":
-       await CallbackQuery.edit_message_text(text=f"""**🔰DRM WebDl Bot Plans🔰
+       await CallbackQuery.edit_message_text(text=f"""**🔰OTT DRM Bot Plans🔰
 
 👇INDIVIDUAL PLANS(All OTTs)👇
 
-1. 99Rs/- Unlimited Downloads/1 Day 
-2. 499Rs/- Unlimited Downloads/28 Days
-3. 2000Rs/- Unlimited Downloads/365 Days[Limited]
+1. 199Rs/- Unlimited Downloads/1 Day 
+2. 599Rs/- Unlimited Downloads/28 Days
+3. 5999Rs/- Unlimited Downloads/365 Days[Limited]
 
 ⚠️Term and Conditions⚠️
 
@@ -619,9 +607,9 @@ If bot didn't respond contact [Tony](https://t.me/tony_091)**""", reply_markup=I
 •Payments Methods of Pakistan , Bangladesh , India are accepted.
 • Other methods :- Paypal, Binance , crypto 
 
-Contact to buy Subscription: [Tony](https://t.me/tony_091)**""", reply_markup=InlineKeyboardMarkup(ST1), disable_web_page_preview=True)
+Contact to buy Subscription: [Mr Provider](https://t.me/mr_provider)**""", reply_markup=InlineKeyboardMarkup(ST1), disable_web_page_preview=True)
     if CallbackQuery.data == "ContactUs":
-       await CallbackQuery.edit_message_text(text=f"**📞 Contact [Tony](https://t.me/tony_rd_jrr)**", reply_markup=InlineKeyboardMarkup(ST1), disable_web_page_preview=True)
+       await CallbackQuery.edit_message_text(text=f"**📞 Contact [Tony](https://t.me/Mr_provider)**", reply_markup=InlineKeyboardMarkup(ST1), disable_web_page_preview=True)
         
 @Bot.on_message(filters.command("start"))
 async def start_handler(bot: Client, message: Message):
