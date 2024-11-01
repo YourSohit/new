@@ -3837,9 +3837,9 @@ class Downloader:
         if type_ == "HOICHOI" or outfor == "mp4":
            cmd = f'mkvmerge -o "{file_name}"'
            for file in audios:
-               cmd+= f' --track-name 0:"ANToNi - [{audio_format} {channel} - {bitrate}]" "{file}" '
+               cmd+= f' --track-name 0:"Ottdrmbot - [{audio_format} {channel} - {bitrate}]" "{file}" '
            for file in self.downloaded_subs:
-               cmd+= f'--language 0:eng --track-name 0:"ANToNi - Subtitles" "{file}" '
+               cmd+= f'--language 0:eng --track-name 0:"Ottdrmbot - Subtitles" "{file}" '
            cmd+= f' "{self.video_file}" '
            st, stout = await run_comman_d(cmd)     
         else:
@@ -3857,10 +3857,10 @@ class Downloader:
               cmd+=f"-map {i}:a? "
            if os.path.exists(subs):
               stream = len(audios)+1
-              cmd+= f'-map {stream}:s -metadata:s:s:0 language=eng -metadata:s:s:0 title="ANToNi.English." '
+              cmd+= f'-map {stream}:s -metadata:s:s:0 language=eng -metadata:s:s:0 title="OttDrmBot.English." '
            step = 0
            for audio in audios:
-               cmd += f'-metadata:s:a:{step} title="ANToNi - [{audio_format} {channel} - {bitrate}]" '
+               cmd += f'-metadata:s:a:{step} title="OttDrmBot - [{audio_format} {channel} - {bitrate}]" '
                step += 1
            cmd += f'-c:v copy -c:a copy "{file_name}"'
            st, stout = await run_comman_d(cmd)
