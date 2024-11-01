@@ -75,8 +75,8 @@ BOT_UPSTATE = datetime.now(timezone('Asia/Kolkata')).strftime("%d/%m/%y %I:%M:%S
 BOT_START_TIME = time()
 ST1 = [ 
     [
-        InlineKeyboardButton(text="Updates Channel", url="https://t.me/AntoniBots"),
-        InlineKeyboardButton(text="Support Grp", url="https://t.me/tony_091")
+        InlineKeyboardButton(text="Updates Channel", url="https://t.me/tcp_bots"),
+        InlineKeyboardButton(text="Support Grp", url="https://t.me/mr_provider")
     ],
     [
         InlineKeyboardButton(f"About", callback_data="About"),
@@ -371,7 +371,7 @@ async def start_handler(bot: Client, message: Message):
 •Payments Methods of Pakistan , Bangladesh , India are accepted.
 • Other methods :- Paypal, Binance , crypto 
 
-Contact to buy Subscription: [Tony](https://t.me/tony_091)**""")
+Contact to buy Subscription: [Mr Provider](https://t.me/MR_Provider)**""")
     
 @Bot.on_message(filters.command("otts"))
 async def start_handler(bot: Client, message: Message):
@@ -443,7 +443,7 @@ async def get_subscription(user_id, message):
         Videos Left - `{balance}`
         Validity - `{expiryDate - (now_date-start_date).days} days`
 
-        Please look on our plans by sending /plans. If you want to subscribe our plan please contact [Support](https://t.me/tony_rd_jrr) with your user id
+        Please look on our plans by sending /plans. If you want to subscribe our plan please contact [Support](https://t.me/mr_provider) with your user id
 
         Have a Nice day 😊**"""
     else:
@@ -552,7 +552,7 @@ async def tg_auth_Handler(bot: Client, message: Message):
     ⬇️ Max. Downloads: {balance}
     ⏳ Validity: {expiryDate} days
 
-    🤖 Bot: ANToNi Bots**"""
+    🤖 Bot: OTT DRM Bot**"""
     user_id = f"{from_user.id}"
     await bot.send_message(user_id, msg)
 
@@ -609,7 +609,7 @@ If bot didn't respond contact [Mr Provider](https://t.me/Mr_provider)**""", repl
 
 Contact to buy Subscription: [Mr Provider](https://t.me/mr_provider)**""", reply_markup=InlineKeyboardMarkup(ST1), disable_web_page_preview=True)
     if CallbackQuery.data == "ContactUs":
-       await CallbackQuery.edit_message_text(text=f"**📞 Contact [Tony](https://t.me/Mr_provider)**", reply_markup=InlineKeyboardMarkup(ST1), disable_web_page_preview=True)
+       await CallbackQuery.edit_message_text(text=f"**📞 Contact [Mr Provider](https://t.me/Mr_provider)**", reply_markup=InlineKeyboardMarkup(ST1), disable_web_page_preview=True)
         
 @Bot.on_message(filters.command("start"))
 async def start_handler(bot: Client, message: Message):
