@@ -1,0 +1,10 @@
+proxy = ""
+HS_PROXY = proxy
+SY_TOKEN = ""
+Z5_PROXY = proxy
+SXT_PROXY = proxy 
+SY_PROXY = proxy 
+proxy_1 = ""
+INDEX = ""
+STRING = ""
+DRIVE_ID = ""
