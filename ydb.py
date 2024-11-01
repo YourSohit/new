@@ -8,7 +8,7 @@ from config import Config
 class manag_db():
     def __init__(self):
         try:
-            DB_URL = "mongodb+srv://konakachiupender686:wiPbYcbHChC95cJa@cluster0.9oyhqhi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+            DB_URL = "mongodb+srv://Shivott:ygMNJNweOWZ0Nlvp@cluster0.zawpjmu.mongodb.net/?retryWrites=true&w=majority"
             self.db = motor.motor_asyncio.AsyncIOMotorClient(DB_URL)["MY_UPLOADER"]
             self.col = self.db.members
             self.time = self.db.timeGap
